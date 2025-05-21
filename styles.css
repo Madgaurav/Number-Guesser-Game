@@ -1,0 +1,136 @@
+/* Modern color scheme with glass morphism effect */
+:root {
+    --primary: #6c5ce7;
+    --secondary: #a29bfe;
+    --dark: #2d3436;
+    --light: #f5f6fa;
+    --success: #00b894;
+    --error: #d63031;
+    --warning: #fdcb6e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 30px;
+    color: var(--light);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #fff, #a29bfe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#guessBtn {
+    width: 60px;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    background: var(--primary);
+    color: white;
+    font-size: 1.2rem;
+}
+
+#guessBtn:hover {
+    background: #5649c0;
+}
+
+.result-container {
+    margin: 25px 0;
+    min-height: 80px;
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+#attempts {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+}
+
+.secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .glass-card {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
