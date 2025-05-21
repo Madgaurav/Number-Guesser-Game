@@ -2,7 +2,8 @@
 
 A modern, sleek number guessing game (1-100) built with HTML, CSS, and JavaScript.
 
-![Game Screenshot](screenshot.png) <!-- Add this later if you want -->
+<img width="1700" alt="image" src="https://github.com/user-attachments/assets/22393d10-81ef-44ef-9f6a-c13febeffa77" />
+
 
 ## Features
 - Random number generation
